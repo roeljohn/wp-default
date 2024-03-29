@@ -11,7 +11,7 @@ if ( have_posts() ) {
 			<?php
 			printf(
 				/* translators: %s: Search term. */
-				esc_html__( 'Results for "%s"', 'wp-default' ),
+				esc_html__( 'Results for "%s"', 'wp-theme-default' ),
 				'<span class="page-description search-term">' . esc_html( get_search_query() ) . '</span>'
 			);
 			?>
@@ -24,7 +24,7 @@ if ( have_posts() ) {
 					'We found %d result for your search.',
 					'We found %d results for your search.',
 					(int) $wp_query->found_posts,
-					'wp-default'
+					'wp-theme-default'
 				)
 			),
 			(int) $wp_query->found_posts

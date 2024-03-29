@@ -22,7 +22,7 @@ $wp_default_comment_count = get_comments_number();
 		?>
 		<h2 class="comments-title">
 			<?php if ( '1' === $wp_default_comment_count ) : ?>
-				<?php esc_html_e( '1 comment', 'wp-default' ); ?>
+				<?php esc_html_e( '1 comment', 'wp-theme-default' ); ?>
 			<?php else : ?>
 				<?php
 				printf(
@@ -49,16 +49,16 @@ $wp_default_comment_count = get_comments_number();
 		<?php
 		the_comments_pagination(
 			array(
-				'before_page_number' => esc_html__( 'Page', 'wp-default' ) . ' ',
+				'before_page_number' => esc_html__( 'Page', 'wp-theme-default' ) . ' ',
 				'mid_size'           => 0,
 				'prev_text'          => sprintf(
 					'%s <span class="nav-prev-text">%s</span>',
 					'ui', 'arrow_left', 
-					esc_html__( 'Older comments', 'wp-default' )
+					esc_html__( 'Older comments', 'wp-theme-default' )
 				),
 				'next_text'          => sprintf(
 					'<span class="nav-next-text">%s</span> %s',
-					esc_html__( 'Newer comments', 'wp-default' ),
+					esc_html__( 'Newer comments', 'wp-theme-default' ),
 					'ui', 'arrow_right'
 				),
 			)
@@ -66,14 +66,14 @@ $wp_default_comment_count = get_comments_number();
 		?>
 
 		<?php if ( ! comments_open() ) : ?>
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'wp-default' ); ?></p>
+			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'wp-theme-default' ); ?></p>
 		<?php endif; ?>
 	<?php endif; ?>
 
 	<?php
 	comment_form(
 		array(
-			'title_reply'        => esc_html__( 'Leave a comment', 'wp-default' ),
+			'title_reply'        => esc_html__( 'Leave a comment', 'wp-theme-default' ),
 			'title_reply_before' => '<h2 id="reply-title" class="comment-reply-title">',
 			'title_reply_after'  => '</h2>',
 		)
