@@ -4,4 +4,4 @@
  * called in template files like index.php, page.php, single.php to call in the sidebar. 
  * It generally contains widget areas for easy customization.
  */
-esc_html_e( 'This is sidebar.php', 'wp-default' ); ?>
+esc_html_e( 'This is sidebar.php', 'wp-theme-default' ); ?>
